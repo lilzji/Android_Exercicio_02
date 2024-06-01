@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Android_Exercicio_02</string>
+    <string name="a">Valor de A</string>
+    <string name="b">Valor de B</string>
+    <string name="c">Valor de C</string>
+    <string name="delta">Valor de Delta</string>
+    <string name="calcular">Calcular</string>
+    <string name="x1">Valor do X1</string>
+    <string name="x2">Valor de X2</string>
+    <string name="resultado">Resultado = </string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etA"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="@string/a"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etB"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="@string/b"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="@+id/etA"
+        app:layout_constraintTop_toBottomOf="@+id/etA" />
+
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/c"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintStart_toStartOf="@+id/etB"
+        app:layout_constraintTop_toBottomOf="@+id/etB" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etC" />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
